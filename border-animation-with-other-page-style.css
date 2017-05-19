@@ -1,0 +1,192 @@
+//Mladen Terzic
+//hover animation
+.index-item-link{
+  background: none; 
+  border: 0; 
+  box-sizing: border-box; 
+  margin: 1em; 
+  padding: 1em 2em; 
+  font-size: inherit; 
+  font-weight: 700; 
+  position: relative; 
+  vertical-align: middle; 
+} 
+  .index-item-link::before, .index-item-link::after { 
+    box-sizing: inherit; 
+    content: ''; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+} 
+  .index-item-link { 
+    transition: color 0.15s; 
+  } 
+  .index-item-link::before, .index-item-link::after,.index-item-link>span { 
+    border: 6px solid transparent;
+    border-radius:0 !important;
+    width: 0; 
+    height: 0; 
+    opacity:1;
+  } 
+  .index-item-link::before { 
+    top: 0; 
+    right: 0; 
+  } 
+  .index-item-link::after { 
+    bottom: 0; 
+    right: 0; 
+  } 
+  .index-item-link:hover { 
+    color: #61EDFF; 
+  } 
+  .index-item-link:hover::before, .index-item-link:hover::after { 
+    width: 100%; 
+    height: 100%; 
+  } 
+  .index-item-link:hover::before { 
+    border-top-color: #61EDFF; 
+    border-right-color: #61EDFF; 
+    transition: 
+      width 0.15s ease-out, 
+      height 0.15s ease-out 0.15s; 
+  }
+.index-item-link:hover {
+    border: none;
+}
+  .index-item-link:hover::after {
+    border-bottom-color: #61EDFF; 
+    border-left-color: #61EDFF; 
+    transition: 
+      border-color 0s ease-out 0.45s, 
+      width 0.15s ease-out 0.15s, 
+      height 0.15s ease-out 0.15s; 
+  } 
+  .intrinsic:hover { 
+    color: #61EDFF; 
+  } 
+  .intrinsic::before {
+    top: 0;
+    right: 0;
+  }
+  
+   // LEFT
+  .intrinsic > span {
+    border: 6px solid transparent;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }		
+
+  .intrinsic::after { 
+    bottom: 0; 
+    right: 0; 
+  } 
+  .intrinsic:hover::before { 
+    border-color: transparent;
+    border-top-color: #61EDFF;  
+    transition: 
+      height 0.15s ease-out, 
+      width 0.15s ease-out 0.15s;  
+  } 
+  .intrinsic:hover span{
+    height: 100% !important;
+    border-left-color: #61EDFF; 
+    transition: 
+      height 0.3s ease-out 0.3s;
+  }
+  .intrinsic:hover::after { 
+    border-color: transparent;
+    border-bottom-color: #61EDFF; 
+    border-right-color: #61EDFF; 
+    transition: 
+      height 0.15s ease-out, 
+      width 0.15s ease-out 0.15s; 
+  }
+* {
+    -moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+/*other style*/
+.index-item-link{
+  margin:0 auto !important;
+  z-index:1;
+}
+@media only screen and (max-width:768px){
+  .index-item-image-wrapper{
+    	width:85% !important;
+    	height:85% !important;
+    }
+}
+
+  
+@media only screen and (min-width:768px){
+	.index-section{
+ 	 	margin:50px;
+ 		width:40% !important;
+	}
+	.index-list{
+  		padding-left:60px;
+    }
+  	.js-index-item-image{
+     margin-top: 10% !important;
+    /* left: auto !important; */
+    position: absolute !important;
+    /* bottom: 0; */
+    /* top: auto !important; */
+    z-index: 100;
+    margin-left: 10%;
+}
+
+.index-item-image-wrapper{
+  	width:75% !important;
+    top:auto !important;
+  	left:auto !important;
+  	bottom:0;
+  	right:0;
+  }
+}
+
+.index-item-text-wrapper {
+  z-index:10;
+}
+@media only screen and (min-width:768px) and (max-width:1000px){
+  .index-item-image-wrapper{
+    width:100% !important;
+    height:100% !important;
+  }
+  .js-index-item-image{
+    width:100% !important;
+    height:100% !important;
+  }
+}
+@media only screen and (max-height: 650px) and (max-width:1000px){
+	.index-item-image-wrapper{
+      width:70% !important;
+      height:90% !important;
+    }
+  .js-index-item-image{
+    width:100% !important;
+    height:100% !important;
+  }	
+}
+@media only screen and (max-height: 650px) and (min-width:1000px){
+	.index-item-image-wrapper{
+      width:50%!important;
+      height:90% !important;
+    }
+  .js-index-item-image{
+    width:100% !important;
+    height:100% !important;
+  }	
+}
+.index-item-link{
+  padding:0 !important;
+}
+.index-item{
+  padding: 30px 50px 50px 30px;
+}
+.index-item-image{
+  z-index:100;
+}
