@@ -5,7 +5,7 @@
  });
 //appending the <span> element to a product's <a> tag
 $(document).ready(function () {
-    $( ".index-item-link" ).append( '<span class="left-border"></span>' );
+    $( ".index-item-link" ).prepend( '<span class="left-border"></span>' );
 });
 
  // init watch function
