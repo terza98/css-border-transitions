@@ -90,7 +90,7 @@
     height: 100%;
     border-left-color: #61EDFF; 
     transition: 
-      height 0.45s ease-out 0.45s;
+      height 0.45s ease-out 0.25s;
   }
   .intrinsic:hover::after { 
     border-color: transparent;
