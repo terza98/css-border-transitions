@@ -19,7 +19,7 @@
     height: 100%; 
 } 
   .index-item-link { 
-    transition: color 0.15s; 
+    transition: color 0.25s; 
   } 
   .index-item-link::before, .index-item-link::after { 
     border: 6px solid transparent;
@@ -43,21 +43,21 @@
     width: 100%; 
     height: 100%; 
   } 
-  .index-item-link:hover::before { 
-    border-top-color: #61EDFF; 
-    border-left-color: #61EDFF; 
-    transition: 
-      width 0.15s ease-out, 
-      height 0.15s ease-out 0.15s; 
-  }
-  .index-item-link:hover::after {
+  .index-item-link:hover::before {
     border-bottom-color: #61EDFF; 
     border-right-color: #61EDFF; 
     transition: 
-      border-color 0s ease-out 0.45s, 
-      width 0.15s ease-out 0.15s, 
-      height 0.15s ease-out 0.15s; 
+      border-color 0s ease-out 0.25s, 
+      width 0.25s ease-out 0.25s, 
+      height 0.25s ease-out 0.25s; 
   } 
+  .index-item-link:hover::after { 
+    border-top-color: #61EDFF; 
+    border-left-color: #61EDFF; 
+    transition: 
+      width 0.25s ease-out, 
+      height 0.25s ease-out 0.25s; 
+  }
   .intrinsic:hover { 
     color: #61EDFF; 
   } 
@@ -83,22 +83,22 @@
     border-color: transparent;
     border-top-color: #61EDFF;  
     transition: 
-      height 0.15s ease-out 0.15, 
-      width 0.15s ease-out 0.15s;  
+      height 0.25s ease-out 0.25, 
+      width 0.25s ease-out 0.25s;  
   } 
   .intrinsic:hover .left-border{
     height: 100%;
     border-left-color: #61EDFF; 
     transition: 
-      height 0.3s ease-out 0.3s;
+      height 0.45s ease-out 0.45s;
   }
   .intrinsic:hover::after { 
     border-color: transparent;
     border-bottom-color: #61EDFF; 
     border-right-color: #61EDFF; 
     transition: 
-      height 0.15s ease-out, 
-      width 0.15s ease-out 0.15s; 
+      height 0.25s ease-out, 
+      width 0.25s ease-out 0.25s; 
   }
 * {
     -moz-border-radius: 0px;
