@@ -1,5 +1,5 @@
-//Mladen Terzic
-//hover animation
+/*Mladen Terzic*/
+/*hover animation*/
 .index-item-link{
   background: none; 
   border: 0; 
@@ -66,7 +66,7 @@
     right: 0;
   }
   
-   // LEFT
+   /*LEFT*/
   .left-border {
     border: 6px solid transparent;
     bottom: 0;
@@ -105,7 +105,7 @@
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 }
-//other style
+/*other page style*/
 .index-item-link{
   margin:0 auto !important;
   z-index:1;
